@@ -73,11 +73,11 @@ function getDirection(currentX, currentY, elapsedTime) {
   const horizontalVelocity = getVelocity(initialX, currentX, elapsedTime)
   const verticalVelocity = getVelocity(initialY, currentY, elapsedTime)
 
-  if (horizontalVelocity >= 1.5) return 'right'
-  if (horizontalVelocity <= -1.5) return 'left'
+  if (horizontalVelocity >= 1.2) return 'right'
+  if (horizontalVelocity <= -1.2) return 'left'
 
-  if (verticalVelocity >= 1.5) return 'down'
-  if (verticalVelocity <= -1.5) return 'up'
+  if (verticalVelocity >= 1.2) return 'down'
+  if (verticalVelocity <= -1.2) return 'up'
 }
 
 function getVelocity(initialPos, finalPos, elapsedTime) {
